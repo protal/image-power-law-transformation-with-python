@@ -38,7 +38,7 @@ for i in range(len(img)):
     for j in range(len(img[i])):
         s = (c*img[i][j][0])**y
         s = (s-min)/(max-min)
-        s = s*255
+        s = s*254
         pwl[i][j] = setGrayColor(s)
 
 print('min:',min,'max:',max)
